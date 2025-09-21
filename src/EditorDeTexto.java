@@ -33,4 +33,20 @@ public class EditorDeTexto {
 
         System.out.println("Texto agregado ");
     }
+
+    /**
+     * Función para mostrar el texto actual
+     */
+    public static void mostrarTextoActual() {
+        // isEmpty() : Verificar si el texto está vacío
+        if (textoActual.isEmpty()) {
+            System.out.println("El editor está vacío.");
+        } else {
+            System.out.println("Texto actual:");
+            System.out.println("================");
+            System.out.println(textoActual);
+            System.out.println("================");
+        }
+    }
+
 }
