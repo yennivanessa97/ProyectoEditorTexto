@@ -49,4 +49,40 @@ public class EditorDeTexto {
         }
     }
 
+    /**
+     * Función para deshacer la última acción (Undo)
+     */
+    public static void deshacer() {
+        // isEmpty() : Verificar si hay acciones para deshacer
+        if (pilaHistorial.isEmpty()) {
+            System.out.println("No hay acciones para deshacer.");
+            return;
+        }
+
+        // push() : Guardar el estado actual en pilaRehacer
+        pilaRehacer.push(textoActual);
+        // pop() :  Recuperar el último estado de pilaHistorial
+        textoActual = pilaHistorial.pop();
+
+        System.out.println("Acción deshecha correctamente.");
+    }
+
+    /**
+     * Función para rehacer la última acción deshecha (Redo)
+     */
+    public static void rehacer() {
+        // isEmpty() : Verificar si hay acciones para rehacer
+        if (pilaRehacer.isEmpty()) {
+            System.out.println("No hay acciones para rehacer.");
+            return;
+        }
+
+        // push() : Guardar el estado actual en pilaHistorial
+        pilaHistorial.push(textoActual);
+        // pop() :  Recuperar el último estado de pilaRehacer
+        textoActual = pilaRehacer.pop();
+
+        System.out.println("Acción rehecha correctamente.");
+    }
+
 }
