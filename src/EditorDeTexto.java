@@ -90,7 +90,7 @@ public class EditorDeTexto {
      * Función para mostrar el menú
      */
     public static void mostrarMenu() {
-        System.out.println("\n===== EDITOR DE TEXTO =====");
+        System.out.println("\n---- Menú----");
         System.out.println("1. Escribir texto");
         System.out.println("2. Deshacer (Undo)");
         System.out.println("3. Rehacer (Redo)");

@@ -37,28 +37,31 @@ El programa permite interactuar desde la consola. A continuación se muestran al
 ### ➡️ 1. Escribir texto
 Cuando el usuario selecciona la opción **1**, puede ingresar texto y este se almacena en el editor.
 
-![Captura escribiendo texto](./assets/captura-escribir.png)
+![Escribir.png](Imagenes/Escribir.png)
 
 ---
 
 ### ➡️ 2. Mostrar texto actual
 Al elegir la opción **4**, se imprime en consola el contenido más reciente del editor.
 
-![Captura mostrando texto](./assets/captura-mostrar.png)
+![TextoActual.png](Imagenes/TextoActual.png)
 
 ---
 
 ### ➡️ 3. Deshacer (Undo)
 La opción **2** revierte la última acción realizada, recuperando el estado anterior.
 
-![Captura deshacer](./assets/captura-deshacer.png)
+![Deshacer.png](Imagenes/Deshacer.png)
+
+![TextoActual2.png](Imagenes/TextoActual2.png)
 
 ---
 
 ### ➡️ 4. Rehacer (Redo)
 Con la opción **3**, se restaura un estado previamente deshecho.
 
-![Captura rehacer](./assets/captura-rehacer.png)
+![Rehacer.png](Imagenes/Rehacer.png)
+![TextoActual3.png](Imagenes/TextoActual3.png)
 ---
 
 ## Cómo clonar y ejecutar el proyecto
