@@ -4,6 +4,7 @@
  *
  * Autora: Yenni Vanessa Delgado
  */
+import java.util.Scanner;
 import java.util.Stack;
 
 public class EditorDeTexto {
@@ -76,7 +77,6 @@ public class EditorDeTexto {
             System.out.println("No hay acciones para rehacer.");
             return;
         }
-
         // push() : Guardar el estado actual en pilaHistorial
         pilaHistorial.push(textoActual);
         // pop() :  Recuperar el último estado de pilaRehacer
@@ -84,6 +84,7 @@ public class EditorDeTexto {
 
         System.out.println("Acción rehecha correctamente.");
     }
+
 
     /**
      * Función para mostrar el menú
@@ -97,6 +98,53 @@ public class EditorDeTexto {
         System.out.println("5. Salir");
         System.out.print("Seleccione una opción: ");
     }
+
+    /**
+     * Función principal
+     */
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int opcion;
+
+        System.out.println("¡Bienvenidos al Editor de Texto!");
+
+        do {
+            mostrarMenu();
+            opcion = scanner.nextInt();
+            scanner.nextLine(); // Consumir salto de línea
+
+            switch (opcion) {
+                case 1:
+                    System.out.print("Ingrese el texto que va ha escribir");
+                    String texto = scanner.nextLine();
+                    escribirTexto(texto);
+                    break;
+
+                case 2:
+                    deshacer();
+                    break;
+
+                case 3:
+                    rehacer();
+                    break;
+
+                case 4:
+                    mostrarTextoActual();
+                    break;
+
+                case 5:
+                    System.out.println("Gracias por usar el Editor de Texto");
+                    break;
+
+                default:
+                    System.out.println("Opción inválida. Intente nuevamente.");
+            }
+
+        } while (opcion != 5);
+
+        scanner.close();
+    }
 }
 
-}
+
+
