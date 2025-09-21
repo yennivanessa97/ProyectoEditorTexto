@@ -85,4 +85,18 @@ public class EditorDeTexto {
         System.out.println("Acción rehecha correctamente.");
     }
 
+    /**
+     * Función para mostrar el menú
+     */
+    public static void mostrarMenu() {
+        System.out.println("\n===== EDITOR DE TEXTO =====");
+        System.out.println("1. Escribir texto");
+        System.out.println("2. Deshacer (Undo)");
+        System.out.println("3. Rehacer (Redo)");
+        System.out.println("4. Mostrar texto actual");
+        System.out.println("5. Salir");
+        System.out.print("Seleccione una opción: ");
+    }
+}
+
 }
