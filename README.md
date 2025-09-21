@@ -64,6 +64,11 @@ Con la opción **3**, se restaura un estado previamente deshecho.
 ![TextoActual3.png](Imagenes/TextoActual3.png)
 ---
 
+### ➡️ 5. Salir del programa
+Con la opción **5**, permite salir del programa.
+![salir.png](Imagenes/salir.png)
+---
+
 ## Cómo clonar y ejecutar el proyecto
 
 1. Clonar este repositorio en tu computadora:
