@@ -1,4 +1,7 @@
 # Editor de Texto con Funcionalidad Undo/Redo
+## Autores 
+
+- **Yenni Vanessa Delgado** - *Desarrollo y documentación del proyecto*
 
 ## ¿Qué es una Pila?
 Una **pila** es una estructura de datos en la que los elementos se manejan bajo la regla **LIFO (Last In, First Out)**, es decir, el último en entrar es el primero en salir.  
